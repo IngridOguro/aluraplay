@@ -1,5 +1,7 @@
+/* CABEÇALHO */
 .cabecalho__container{
-    display: flex;
+    /* faz com que o container se expanda ocupando toda a largura do layout */
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     /* fixo no topo da tela */
@@ -11,9 +13,33 @@
     display: none;
 }
 
+/* SEÇÃO SUPERIOR */
+.superior__secao__container{
+    display:flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+}
+
+
+/* RODAPÉ */
+.rodape__container{
+    display:flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
+
 @media(min-width: 834px){
     
+    /* CABEÇALHO */
     .cabecalho__pesquisar__item{
         display: block;
+    }
+
+    /* RODAPÉ */
+    .rodape__container{
+        justify-content: space-between;
     }
 }
